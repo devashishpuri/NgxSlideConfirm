@@ -7,11 +7,9 @@
     "url": "https://github.com/devashishpuri/NgxSlideConfirm"
   },
   "private": false,
-  "dependencies": {
-    "@angular/cdk": "^8.2.3"
-  },
   "peerDependencies": {
     "@angular/common": "^8.1.3",
-    "@angular/core": "^8.1.3"
+    "@angular/core": "^8.1.3",
+    "@angular/cdk": "^8.2.3"
   }
 }
