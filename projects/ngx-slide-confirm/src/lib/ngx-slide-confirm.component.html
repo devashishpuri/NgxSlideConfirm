@@ -1,0 +1,30 @@
+<div [style.backgroundColor]='color' [class]='"ngx-slide-confirm-wrapper " + class'>
+    <div class="ngx-slide-hint-text" [style.opacity]='opacity'>
+        {{ hint }}
+    </div>
+
+    <div class="ngx-slide-confirm-boundry-wrapper">
+        <ng-container cdkDropListGroup>
+            <!-- Drag Source -->
+            <div class="ngx-slide-confirm-source" cdkDropList (cdkDropListDropped)="drop($event)">
+
+                <!-- Drag Handle -->
+                <div class="ngx-slide-confirm-handle" cdkDrag cdkDragLockAxis="x" (cdkDragMoved)='handleMove($event)'
+                    cdkDragBoundary=".ngx-slide-confirm-boundry-wrapper" *ngIf='!isConfirmed'>
+                    <span class='slide-icon' [style.color]='color'>&#10095;</span>
+                </div>
+
+            </div>
+
+            <div class="spacer"></div>
+
+            <!-- Drag Target -->
+            <div class="ngx-slide-confirm-target" cdkDropList (cdkDropListDropped)="drop($event)">
+                <!-- Drag Handle -->
+                <div class="ngx-slide-confirm-handle" *ngIf='isConfirmed'>
+                    <span class='slide-icon' [style.color]='color'>&#10095;</span>
+                </div>
+            </div>
+        </ng-container>
+    </div>
+</div>

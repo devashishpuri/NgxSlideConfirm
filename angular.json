@@ -119,6 +119,41 @@
           }
         }
       }
+    },
+    "NgxSlideConfirm": {
+      "projectType": "library",
+      "root": "projects/ngx-slide-confirm",
+      "sourceRoot": "projects/ngx-slide-confirm/src",
+      "prefix": "NgxSlideConfirm",
+      "architect": {
+        "build": {
+          "builder": "@angular-devkit/build-ng-packagr:build",
+          "options": {
+            "tsConfig": "projects/ngx-slide-confirm/tsconfig.lib.json",
+            "project": "projects/ngx-slide-confirm/ng-package.json"
+          }
+        },
+        "test": {
+          "builder": "@angular-devkit/build-angular:karma",
+          "options": {
+            "main": "projects/ngx-slide-confirm/src/test.ts",
+            "tsConfig": "projects/ngx-slide-confirm/tsconfig.spec.json",
+            "karmaConfig": "projects/ngx-slide-confirm/karma.conf.js"
+          }
+        },
+        "lint": {
+          "builder": "@angular-devkit/build-angular:tslint",
+          "options": {
+            "tsConfig": [
+              "projects/ngx-slide-confirm/tsconfig.lib.json",
+              "projects/ngx-slide-confirm/tsconfig.spec.json"
+            ],
+            "exclude": [
+              "**/node_modules/**"
+            ]
+          }
+        }
+      }
     }},
   "defaultProject": "MatSlideConfirm"
 }

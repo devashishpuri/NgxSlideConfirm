@@ -17,7 +17,15 @@
     "lib": [
       "es2018",
       "dom"
-    ]
+    ],
+    "paths": {
+      "ngx-slide-confirm": [
+        "dist/ngx-slide-confirm"
+      ],
+      "ngx-slide-confirm/*": [
+        "dist/ngx-slide-confirm/*"
+      ]
+    }
   },
   "angularCompilerOptions": {
     "fullTemplateTypeCheck": true,

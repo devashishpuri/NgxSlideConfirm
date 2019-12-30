@@ -1,0 +1,59 @@
+.ngx-slide-confirm-wrapper {
+    margin          : 16px;
+    height          : 56px;
+    border-radius   : 32px;
+    background-color: #2980b9;
+    // display      : flex;
+    padding         : 4px;
+    position: relative;
+
+    .ngx-slide-confirm-boundry-wrapper {
+        display: flex;
+    }
+
+    .ngx-slide-hint-text {
+        position : absolute;
+        top      : 50%;
+        left     : 50%;
+        transform: translate(-50%, -50%);
+        color: white;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+    }
+}
+
+.ngx-slide-confirm-source,
+.ngx-slide-confirm-handle,
+.ngx-slide-confirm-target {
+    width        : 56px;
+    height       : 56px;
+    border-radius: 28px;
+}
+
+// .ngx-slide-confirm-source {
+//     // background-color: gray;
+// }
+
+// .ngx-slide-confirm-target {
+//     // background-color: gray;
+// }
+
+.spacer {
+    flex-grow: 1;
+}
+
+.ngx-slide-confirm-handle {
+    background-color: white;
+    display         : flex;
+    align-items     : center;
+    justify-content : center;
+    cursor          : pointer;
+
+    .slide-icon {
+        font-size: 28px;
+        color    : #2980b9;
+    }
+
+    &.cdk-drag-placeholder {
+        display: none;
+    }
+}
