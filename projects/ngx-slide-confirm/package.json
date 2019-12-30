@@ -2,11 +2,19 @@
   "name": "ngx-slide-confirm",
   "version": "0.0.1",
   "license": "MIT",
+  "homepage": "https://github.com/devashishpuri/NgxSlideConfirm",
   "repository": {
     "type": "git",
     "url": "https://github.com/devashishpuri/NgxSlideConfirm"
   },
   "private": false,
+  "keywords": [
+    "angular",
+    "slide-to-confirm",
+    "slide-confirm",
+    "ngx-slide-confirm",
+    "ngx-confirm"
+  ],
   "peerDependencies": {
     "@angular/common": "^8.1.3",
     "@angular/core": "^8.1.3",
